@@ -1,35 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="20" total="21" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-13T16:06:10Z" name="Default suite" finished-at="2026-04-13T16:06:34Z" duration-ms="24548">
+  <suite started-at="2026-04-13T16:43:17Z" name="Main Test Suite" finished-at="2026-04-13T16:45:01Z" duration-ms="104482">
     <groups>
-      <group name="regression">
-        <method signature="LoginTest.verifyDashboardDisplayed()[pri:0, instance:com.orthofx.smilestream.tests.Doctor.LoginTest@22f59fa]" name="verifyDashboardDisplayed" class="com.orthofx.smilestream.tests.Doctor.LoginTest"/>
-      </group> <!-- regression -->
-      <group name="login">
-        <method signature="LoginTest.verifyDashboardDisplayed()[pri:0, instance:com.orthofx.smilestream.tests.Doctor.LoginTest@22f59fa]" name="verifyDashboardDisplayed" class="com.orthofx.smilestream.tests.Doctor.LoginTest"/>
-      </group> <!-- login -->
+      <group name="run">
+        <method signature="UploadXrayTest.inValidMessageDispalyed()[pri:0, instance:com.orthofx.smilestream.tests.Doctor.UploadXrayTest@15f47664]" name="inValidMessageDispalyed" class="com.orthofx.smilestream.tests.Doctor.UploadXrayTest"/>
+      </group> <!-- run -->
     </groups>
-    <test started-at="2026-04-13T16:06:10Z" name="Default test" finished-at="2026-04-13T16:06:34Z" duration-ms="24548">
-      <class name="com.orthofx.smilestream.tests.Doctor.LoginTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.orthofx.smilestream.tests.Doctor.LoginTest@22f59fa]" started-at="2026-04-13T16:06:10Z" name="setup" finished-at="2026-04-13T16:06:24Z" duration-ms="13965" status="PASS">
+    <test started-at="2026-04-13T16:43:17Z" name="Doctor Module Tests" finished-at="2026-04-13T16:45:01Z" duration-ms="104482">
+      <class name="com.orthofx.smilestream.tests.Doctor.UploadXrayTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.orthofx.smilestream.tests.Doctor.UploadXrayTest@15f47664]" started-at="2026-04-13T16:43:17Z" name="setup" finished-at="2026-04-13T16:43:30Z" duration-ms="13578" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setupObjects()[pri:0, instance:com.orthofx.smilestream.tests.Doctor.LoginTest@22f59fa]" started-at="2026-04-13T16:06:24Z" name="setupObjects" finished-at="2026-04-13T16:06:24Z" duration-ms="129" status="PASS">
+        <test-method is-config="true" signature="setupObject()[pri:0, instance:com.orthofx.smilestream.tests.Doctor.UploadXrayTest@15f47664]" started-at="2026-04-13T16:43:30Z" name="setupObject" finished-at="2026-04-13T16:43:30Z" duration-ms="82" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setupObjects -->
-        <test-method signature="verifyDashboardDisplayed()[pri:0, instance:com.orthofx.smilestream.tests.Doctor.LoginTest@22f59fa]" started-at="2026-04-13T16:06:24Z" name="verifyDashboardDisplayed" finished-at="2026-04-13T16:06:34Z" duration-ms="9994" status="PASS">
+        </test-method> <!-- setupObject -->
+        <test-method signature="inValidMessageDispalyed()[pri:0, instance:com.orthofx.smilestream.tests.Doctor.UploadXrayTest@15f47664]" started-at="2026-04-13T16:43:30Z" name="inValidMessageDispalyed" finished-at="2026-04-13T16:45:00Z" duration-ms="90221" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyDashboardDisplayed -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orthofx.smilestream.tests.Doctor.LoginTest@22f59fa]" started-at="2026-04-13T16:06:34Z" name="tearDown" finished-at="2026-04-13T16:06:34Z" duration-ms="423" status="PASS">
+        </test-method> <!-- inValidMessageDispalyed -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orthofx.smilestream.tests.Doctor.UploadXrayTest@15f47664]" started-at="2026-04-13T16:45:00Z" name="tearDown" finished-at="2026-04-13T16:45:01Z" duration-ms="569" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.orthofx.smilestream.tests.Doctor.LoginTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.orthofx.smilestream.tests.Doctor.UploadXrayTest -->
+    </test> <!-- Doctor Module Tests -->
+  </suite> <!-- Main Test Suite -->
 </testng-results>
