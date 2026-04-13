@@ -1,0 +1,35 @@
+version: "3.7"
+
+services:
+  healenium-backend:
+    image: healenium/hlm-backend:latest
+    container_name: healenium-backend
+    environment:
+      # Use your LOCAL Postgres running on Windows host:
+      # - If Postgres runs on your machine: host.docker.internal works from Docker containers on Windows.
+      # - Change DB/user/pass as needed.
+      SPRING_DATASOURCE_URL: jdbc:postgresql://host.docker.internal:5432/healenium
+      SPRING_DATASOURCE_USERNAME: healenium
+      SPRING_DATASOURCE_PASSWORD: healenium
+    ports:
+      - "7878:7878"
+
+  selector-imitator:
+    image: healenium/hlm-selector-imitator:latest
+    container_name: healenium-selector-imitator
+    depends_on:
+      - healenium-backend
+    environment:
+      HLM_BACKEND_URL: http://healenium-backend:7878
+    ports:
+      - "8000:8000"
+
+  healenium-ui:
+    image: healenium/hlm-frontend:latest
+    container_name: healenium-ui
+    depends_on:
+      - healenium-backend
+    environment:
+      HLM_BACKEND_URL: http://localhost:7878
+    ports:
+      - "3000:3000"

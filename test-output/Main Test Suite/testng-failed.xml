@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Main Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Doctor Module Tests(failed)">
+    <groups>
+      <run>
+        <include name="run"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.orthofx.smilestream.tests.Doctor.TreatmentAddOnTest">
+        <methods>
+          <include name="setupObject"/>
+          <include name="tearDown"/>
+          <include name="verifyInvalidemailMessage"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.orthofx.smilestream.tests.Doctor.TreatmentAddOnTest -->
+    </classes>
+  </test> <!-- Doctor Module Tests(failed) -->
+</suite> <!-- Failed suite [Main Test Suite] -->
