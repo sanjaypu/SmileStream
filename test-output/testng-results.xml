@@ -2,28 +2,34 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-10T11:19:17Z" name="Default suite" finished-at="2026-04-10T11:20:50Z" duration-ms="93712">
+  <suite started-at="2026-04-13T16:06:10Z" name="Default suite" finished-at="2026-04-13T16:06:34Z" duration-ms="24548">
     <groups>
+      <group name="regression">
+        <method signature="LoginTest.verifyDashboardDisplayed()[pri:0, instance:com.orthofx.smilestream.tests.Doctor.LoginTest@22f59fa]" name="verifyDashboardDisplayed" class="com.orthofx.smilestream.tests.Doctor.LoginTest"/>
+      </group> <!-- regression -->
+      <group name="login">
+        <method signature="LoginTest.verifyDashboardDisplayed()[pri:0, instance:com.orthofx.smilestream.tests.Doctor.LoginTest@22f59fa]" name="verifyDashboardDisplayed" class="com.orthofx.smilestream.tests.Doctor.LoginTest"/>
+      </group> <!-- login -->
     </groups>
-    <test started-at="2026-04-10T11:19:17Z" name="Default test" finished-at="2026-04-10T11:20:50Z" duration-ms="93712">
-      <class name="com.orthofx.smilestream.tests.Doctor.UploadXrayTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.orthofx.smilestream.tests.Doctor.UploadXrayTest@2eea88a1]" started-at="2026-04-10T11:19:17Z" name="setup" finished-at="2026-04-10T11:19:25Z" duration-ms="8240" status="PASS">
+    <test started-at="2026-04-13T16:06:10Z" name="Default test" finished-at="2026-04-13T16:06:34Z" duration-ms="24548">
+      <class name="com.orthofx.smilestream.tests.Doctor.LoginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.orthofx.smilestream.tests.Doctor.LoginTest@22f59fa]" started-at="2026-04-13T16:06:10Z" name="setup" finished-at="2026-04-13T16:06:24Z" duration-ms="13965" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setupObject()[pri:0, instance:com.orthofx.smilestream.tests.Doctor.UploadXrayTest@2eea88a1]" started-at="2026-04-10T11:19:25Z" name="setupObject" finished-at="2026-04-10T11:19:25Z" duration-ms="17" status="PASS">
+        <test-method is-config="true" signature="setupObjects()[pri:0, instance:com.orthofx.smilestream.tests.Doctor.LoginTest@22f59fa]" started-at="2026-04-13T16:06:24Z" name="setupObjects" finished-at="2026-04-13T16:06:24Z" duration-ms="129" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setupObject -->
-        <test-method signature="inValidMessageDispalyed()[pri:0, instance:com.orthofx.smilestream.tests.Doctor.UploadXrayTest@2eea88a1]" started-at="2026-04-10T11:19:25Z" name="inValidMessageDispalyed" finished-at="2026-04-10T11:20:50Z" duration-ms="85176" status="PASS">
+        </test-method> <!-- setupObjects -->
+        <test-method signature="verifyDashboardDisplayed()[pri:0, instance:com.orthofx.smilestream.tests.Doctor.LoginTest@22f59fa]" started-at="2026-04-13T16:06:24Z" name="verifyDashboardDisplayed" finished-at="2026-04-13T16:06:34Z" duration-ms="9994" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- inValidMessageDispalyed -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orthofx.smilestream.tests.Doctor.UploadXrayTest@2eea88a1]" started-at="2026-04-10T11:20:50Z" name="tearDown" finished-at="2026-04-10T11:20:50Z" duration-ms="263" status="PASS">
+        </test-method> <!-- verifyDashboardDisplayed -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orthofx.smilestream.tests.Doctor.LoginTest@22f59fa]" started-at="2026-04-13T16:06:34Z" name="tearDown" finished-at="2026-04-13T16:06:34Z" duration-ms="423" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.orthofx.smilestream.tests.Doctor.UploadXrayTest -->
+      </class> <!-- com.orthofx.smilestream.tests.Doctor.LoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

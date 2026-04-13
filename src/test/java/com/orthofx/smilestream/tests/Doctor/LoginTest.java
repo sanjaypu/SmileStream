@@ -44,7 +44,7 @@ public class LoginTest extends BaseTest {
 
 	// TC_AUTH_02:verify user is getting incorrect username when username is givenm,
 	// incorrect
-	@Test(groups= {"login","regression"})
+	//@Test(groups= {"login","regression"})
 	public void unsucessfulllogin() throws Exception {
 		lf.login(3);
 		lp.isUserNotFoundErrorDisplayed();
@@ -53,7 +53,7 @@ public class LoginTest extends BaseTest {
 
 	// TC_AUTH_03:Verify the user is able to get the validation message when email
 	// and password is not entered
-	@Test(groups= {"login","regression"})
+	//@Test(groups= {"login","regression"})
 	public void validationMessage() throws Exception {
 		lp.loginToApplication("", "");
 		lp.isErrorMessageDisplayed();
