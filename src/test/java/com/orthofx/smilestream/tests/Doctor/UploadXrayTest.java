@@ -41,7 +41,8 @@ public class UploadXrayTest extends BaseTest {
 
 		
 	}
-	@Test
+	@Test(groups = "run")
+
 	//verify invalid messge is displayed
 	public void inValidMessageDispalyed() throws Exception {
 		pf.photoUpload();
