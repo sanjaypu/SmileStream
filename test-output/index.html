@@ -5,8 +5,9 @@
   <meta charset='utf-8'>
   <title>TestNG reports</title>
 
-    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
-    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type='text/javascript'>
@@ -20,9 +21,9 @@
      -->
   </head>
 
-  <body>
-    <div class="top-banner-root">
+  <body>    <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
       <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
@@ -140,7 +141,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
-&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Main Test Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Doctor Module Tests&quot;&gt;
     &lt;groups&gt;
@@ -213,7 +214,7 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'inValidMessageDispalyed')
 data.setCell(0, 2, 'com.orthofx.smilestream.tests.Doctor.UploadXrayTest')
-data.setCell(0, 3, 90221);
+data.setCell(0, 3, 95237);
 window.suiteTableData['Main_Test_Suite']= { tableData: data, tableDiv: 'times-div-Main_Test_Suite'}
 return data;
 }
@@ -237,20 +238,31 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">com.orthofx.smilestream.tests.Doctor.TreatmentAddOnTest</span>
+              <span class="ignored-class-name">com.orthofx.smilestream.tests.Doctor.PatientListingTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">customPricePage</span>
+                <span class="ignored-method-name">addPatient</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
               <span class="ignored-class-name">com.orthofx.smilestream.tests.Doctor.ProductSelectionTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">brightProductSucessFull</span>
-                <br/>
                 <span class="ignored-method-name">FxClearProductSucessFull</span>
                 <br/>
+                <span class="ignored-method-name">brightProductSucessFull</span>
+                <br/>
                 <span class="ignored-method-name">AirFlexProductSucessFull</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.orthofx.smilestream.tests.Doctor.TreatmentSelectionTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">relapseTreatmentSucessfull</span>
+                <br/>
+                <span class="ignored-method-name">alignerTreatmentSucessfull</span>
+                <br/>
+                <span class="ignored-method-name">retianerTreatmentSucessfull</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -262,52 +274,41 @@ return data;
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">com.orthofx.smilestream.tests.Doctor.TreatmentSelectionTest</span>
+              <span class="ignored-class-name">com.orthofx.smilestream.tests.Doctor.TreatmentAddOnTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">retianerTreatmentSucessfull</span>
-                <br/>
-                <span class="ignored-method-name">relapseTreatmentSucessfull</span>
-                <br/>
-                <span class="ignored-method-name">alignerTreatmentSucessfull</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.orthofx.smilestream.tests.Doctor.PatientCreationTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">guardianCheckBoxDisplayed</span>
-                <br/>
-                <span class="ignored-method-name">termsAndCondition</span>
-                <br/>
-                <span class="ignored-method-name">validationMessage</span>
-                <br/>
-                <span class="ignored-method-name">uploadPhoto</span>
-                <br/>
-                <span class="ignored-method-name">patientCreation</span>
+                <span class="ignored-method-name">customPricePage</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
               <span class="ignored-class-name">com.orthofx.smilestream.tests.Doctor.PlanTypeTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">verifyFxFullClearPlanSelection</span>
-                <br/>
-                <span class="ignored-method-name">verifyFx10BrightPlanSelection</span>
-                <br/>
-                <span class="ignored-method-name">verifyFx10ClearPlanSelection</span>
+                <span class="ignored-method-name">verifyFxFullAirFlexPlanSelection</span>
                 <br/>
                 <span class="ignored-method-name">verifyFx10AirFlexPlanSelection</span>
                 <br/>
-                <span class="ignored-method-name">verifyFxFullAirFlexPlanSelection</span>
-                <br/>
                 <span class="ignored-method-name">verifyFxFullBrightPlanSelection</span>
+                <br/>
+                <span class="ignored-method-name">verifyFx10BrightPlanSelection</span>
+                <br/>
+                <span class="ignored-method-name">verifyFxFullClearPlanSelection</span>
+                <br/>
+                <span class="ignored-method-name">verifyFx10ClearPlanSelection</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">com.orthofx.smilestream.tests.Doctor.PatientListingTest</span>
+              <span class="ignored-class-name">com.orthofx.smilestream.tests.Doctor.PatientCreationTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">addPatient</span>
+                <span class="ignored-method-name">uploadPhoto</span>
+                <br/>
+                <span class="ignored-method-name">termsAndCondition</span>
+                <br/>
+                <span class="ignored-method-name">patientCreation</span>
+                <br/>
+                <span class="ignored-method-name">guardianCheckBoxDisplayed</span>
+                <br/>
+                <span class="ignored-method-name">validationMessage</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -326,19 +327,20 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setupObject</span>
-                <span class="method-start">13578 ms</span>
+                <span class="method-start">13373 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">inValidMessageDispalyed</span>
-                <span class="method-start">13660 ms</span>
+                <span class="method-start">13437 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">103890 ms</span>
+                <span class="method-start">108686 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
     </div> <!-- wrapper -->
   </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
 </html>
